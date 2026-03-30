@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 # 1. Configurazione Responsive e Stile
-st.set_page_config(page_title="Firenze Smart City", layout="wide")
+st.set_page_config(page_title="Popolazione fiorentina", layout="wide")
 
 # CSS personalizzato per colori Firenze (Viola e Oro)
 st.markdown("""
@@ -65,7 +65,7 @@ df_dip = df_dip_raw.loc[mask_d].copy()
 df_sal = df_sal_raw.loc[mask_s].copy()
 
 # --- MAIN DASHBOARD ---
-st.title("🏙️ Firenze Smart City: Analisi Demografica")
+st.title("🏙️ Firenze: Analisi Demografica")
 
 # --- NUOVA SEZIONE: CARD METRICHE (Somme e Medie) ---
 st.subheader("📌 Riepilogo Periodo Selezionato")
